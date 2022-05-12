@@ -1,0 +1,2 @@
+Membuat Object menggunakan class
+
