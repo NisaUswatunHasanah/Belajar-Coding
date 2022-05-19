@@ -1,4 +1,21 @@
 Membuat Object pada Javascript
+
+Object adalah nilai atau tipe data yang ada pada javascipt contohnya:
+
+
+        let mhs = {
+            nama : "Nisa Uswatun Hasanah"
+            nim : "172100235"
+            email : [
+                "nisaneyzo@gmail.com"
+            ],
+
+            hitungIPK : function() {
+                ...
+
+            }
+        }
+
 1. object Literal
     isi dari object adalah (properti + method)
        *propreti
