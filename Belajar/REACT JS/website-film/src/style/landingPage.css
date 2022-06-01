@@ -1,6 +1,6 @@
 .MyBG {
     height: 100vh;
-    background: url("../assets/BG/main.webp");
+    background: url("../assets/bg/main.webp");
     background-size: cover;
 }
 
@@ -20,7 +20,28 @@
 }
 
 .trending {
-    height: 100vh;
-    background: url("../assets/BG/avatar.jpg");
+    height: auto;
+    background: url("../assets/bg/avatar.jpg");
     background-size: cover;
+}
+
+.superhero {
+    height: auto;
+    background: url("../assets/bg/aladin.jpeg");
+    background-size: cover;
+}
+
+.movieWrapper {
+
+}
+
+.movieImage {
+    height: auto;
+    background-color: black;
+    margin: 5px;
+    padding: 5px;
+}
+
+.images {
+    height: 500px;
 }
