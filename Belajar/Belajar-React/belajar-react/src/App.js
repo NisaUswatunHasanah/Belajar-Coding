@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import Header from "./Components/Header";
-// import ProductList from "./Components/ProductList";
+import ProductList from "./Components/ProductList";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
-import Header from "./Components/Header";
 
 function App() {
   const [products, setProducts] = useState([
@@ -29,10 +28,19 @@ function App() {
   return (
     <div>
       <Router>
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/" element={<Header />} />
+        <switch>
+          <route exact path="/">
+            <ProductList products={products} deleteProduct={deleteProduct}/>
+          </route>
+          <route path="About/">
+            <About/>
+          </route>
+          <route path="Contact/">
+            <Contact/>
+          </route>
+        </switch>
       </Router>
+      
     </div>
   );
 }
