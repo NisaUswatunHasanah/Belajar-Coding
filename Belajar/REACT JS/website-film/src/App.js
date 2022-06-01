@@ -1,6 +1,7 @@
-import { Col, Container, Row } from "react-bootstrap"
 import './App.css';
 import NavigationBar from './components/NavigationBar';
+import Intro from './components/Intro';
+import Trending from './components/Trending'
 import "./style/landingPage.css"
 
 function App() {
@@ -9,17 +10,15 @@ function App() {
       {/* intro section */}
       <div className='MyBG'>
         <NavigationBar />
-        <div className="intro">
-          <Container className="text-white d-flex justify-content-center align-item-center border">
-            <Row>
-              <Col>
-              <h1>NONTON GRATIS</h1>
-              </Col>
-            </Row>
-          </Container>
-        </div>
+        <Intro />
       </div>
       {/* end of intro */}
+
+      {/* trending section */}
+      <div className='trending'>
+        <Trending/>
+      </div>
+      {/* end of trending section */}
     </div>
   );
 }

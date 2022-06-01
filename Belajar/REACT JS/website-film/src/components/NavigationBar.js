@@ -3,7 +3,7 @@ import { Navbar, Container, Nav } from "react-bootstrap"
 const NavigationBar = () => {
     return (
         <div>
-            <Navbar>
+            <Navbar variant="dark">
                 <Container>
                     <Navbar.Brand>NISAFILMS</Navbar.Brand>
                     <Nav>
